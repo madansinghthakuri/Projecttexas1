@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:id="@+id/textview"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_below="@+id/textview"
+        android:drawableLeft="@drawable/loginicon"
+        android:drawablePadding="5dp"
+        android:id="@+id/username"
+        />
+    <LinearLayout
+        android:id="@+id/linear_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/passwordicon"
+            android:layout_below="@+id/username"
+            android:drawablePadding="5dp"
+            />
+        <ImageView
+            android:id="@+id/toggle_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/password"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_below="@+id/linear_password"
+        android:id="@+id/btn_login"
+
+        />
+
+
+</RelativeLayout>

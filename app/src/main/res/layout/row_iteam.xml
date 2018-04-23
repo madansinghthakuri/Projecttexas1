@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_weight="4">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="Fullname"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+
+
+        android:id="@+id/fullname"
+
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="Mobile number"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+
+
+        android:id="@+id/mobileno"
+
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="username"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+
+        android:id="@+id/username"
+
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="Email"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+
+        android:id="@+id/email"
+        />
+
+
+
+
+</LinearLayout>
